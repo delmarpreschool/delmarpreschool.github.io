@@ -47,7 +47,7 @@
       font-size: 50px;
   }
   .logo {
-      color: #f4511e;
+      color: #00aeff;
       font-size: 200px;
   }
   .thumbnail {
@@ -62,13 +62,13 @@
   }
   .carousel-control.right, .carousel-control.left {
       background-image: none;
-      color: #f4511e;
+      color: #00aeff;
   }
   .carousel-indicators li {
-      border-color: #f4511e;
+      border-color: #00aeff;
   }
   .carousel-indicators li.active {
-      background-color: #f4511e;
+      background-color: #00aeff;
   }
   .item h4 {
       font-size: 19px;
@@ -81,7 +81,7 @@
       font-style: normal;
   }
   .panel {
-      border: 1px solid #f4511e; 
+      border: 1px solid #00aeff; 
       border-radius:0 !important;
       transition: box-shadow 0.5s;
   }
@@ -459,7 +459,7 @@
 <div id="googleMap" style="height:400px;width:100%;"></div>
 <script>
 function myMap() {
-var myCenter = new google.maps.LatLng(32.7157, 117.1611);
+var myCenter = new google.maps.LatLng(32.7157, -117.1611);
 var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 var marker = new google.maps.Marker({position:myCenter});
