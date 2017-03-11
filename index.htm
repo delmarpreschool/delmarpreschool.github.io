@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script type="text/javascript" src="instafeed.min.js"></script>
+
+  <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'qualitycaresd',
+        clientId: 'f94e25940158481b9857176fab6dde5e'
+    });
+    feed.run();
+</script>
+  
   <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>Quality Care SD Web Design</title>
   <meta charset="utf-8">
@@ -293,7 +304,7 @@
   </div>
 </div>
 
-<!-- Container (Portfolio Section)
+<!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
   <h2>Websites We Have Created...</h2><br>
   <div class="row text-center slideanim">
@@ -319,8 +330,7 @@
       </div>
     </div>
   </div><br>
-  -->
-  
+ <div id="instafeed"></div>   
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
   <h2>What our clients have to say...</h2>
     <!-- Indicators -->
