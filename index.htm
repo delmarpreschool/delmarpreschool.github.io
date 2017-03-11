@@ -3,16 +3,14 @@
 <head>
 <script type="text/javascript" src="instafeed.min.js"></script>
 <script type="text/javascript">
-    var feed = new Instafeed({
+    var userFeed = new Instafeed({
         get: 'user',
-        userId: 'qualitycaresd',
-       filter: function(image) {
-            return image.tags.indexOf('qualitycaresd') >= 0;
-        }
+        userId: '4679853351',
+        accessToken: 'f94e25940158481b9857176fab6dde5e'
     });
-    feed.run();
+    userFeed.run();
 </script>
-  
+    
   <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>Quality Care SD Web Design</title>
   <meta charset="utf-8">
