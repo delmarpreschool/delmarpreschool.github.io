@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 <script type="text/javascript" src="instafeed.min.js"></script>
-
-  <script type="text/javascript">
+<script type="text/javascript">
     var feed = new Instafeed({
         get: 'user',
         userId: 'qualitycaresd',
-        clientId: 'f94e25940158481b9857176fab6dde5e'
+       filter: function(image) {
+            return image.tags.indexOf('qualitycaresd') >= 0;
+        }
     });
     feed.run();
 </script>
