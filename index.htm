@@ -8,7 +8,14 @@
         userId: '4679853351',
         accessToken: '4679853351.1677ed0.c8f3d25cdd2649b89b528c3d170b5971',
         resolution: 'low_resolution',
-        template: '<img src="{{image}}" /><br>{{caption}}<br>'
+        limit: '3',
+        template: '    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="{{image}}" alt="{{caption}}">
+        <p><strong>{{caption}}</strong></p>
+        <p>{{location}}</p>
+      </div>
+    </div>'
     });
     userFeed.run();
 </script>
@@ -228,10 +235,7 @@
 
 <div class="jumbotron text-center">
   <h1>Quality Care SD</h1> 
-  <p>We specialize in Web Site Design</p> 
-
- <div id="instafeed"></div>    
-    
+  <p>We specialize in Web Site Design</p>    
     <div class="input-group">
       <div class="input-group-btn">
         <a href="#contact"><button class="btn btn-default btn-lg">Contact Us!</button></a>
@@ -308,34 +312,14 @@
   </div>
 </div>
 
-<!-- Container (Portfolio Section)
+<!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
   <h2>Websites We Have Created...</h2><br>
   <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Del Mar Preschool</strong></p>
-        <p>Yes, we built Del Mar Preschool</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
-        <p><strong>Online Store</strong></p>
-        <p>We built Online Store</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>Intranet Dashboard</strong></p>
-        <p>Yes, Intranet Dashboard Is Ours.</p>
-      </div>
-    </div>
-  </div><br>
+<div id="instafeed"></div>
+    </div><br>
     
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+<!--  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
   <h2>What our clients have to say...</h2>
     <!-- Indicators
     <ol class="carousel-indicators">
