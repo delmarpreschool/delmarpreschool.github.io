@@ -148,11 +148,20 @@ $('#gform').on('submit', function(e) {
 				<!-- Three -->
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
-							<h2>Register</h2>
+							<h2>Our Location</h2>
 							<p>We welcome you to schedule a walkthrough today!</p>
 							<div class="split style1">
 								<section>
-
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(32.944448, -117.244049);
+var mapProp = {center:myCenter, zoom:15, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn_birPOhsnfF58gFEFLgH4vHpn1Nh3E8&callback=myMap"></script>
 								</section>
 								<section>
 									<ul class="contact">
