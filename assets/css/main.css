@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Diplomata+SC);
+@import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
 
 /*
 	Hyperspace by HTML5 UP
@@ -1712,6 +1712,7 @@
 
 	h1 {
 		font-size: 2.75em;
+		font-family: 'Homemade Apple', cursive;
 	}
 
 		h1.major {
