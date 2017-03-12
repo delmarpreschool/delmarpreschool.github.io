@@ -1,1 +1,0 @@
-# QualityCareSD.github.io
